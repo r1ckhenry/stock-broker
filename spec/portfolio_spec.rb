@@ -10,7 +10,7 @@ describe Portfolio do
   end
 
   it 'should have no stocks at first' do
-    
+    expect(portfolio.stocks.count).to eq 0
   end
 
 end
