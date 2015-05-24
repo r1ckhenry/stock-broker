@@ -9,6 +9,10 @@ describe Broker do
     expect(broker.name).to eq 'Test Brokers'
   end
 
+  it 'should have no initial clients' do
+    expect(broker.clients.count).to eq 0
+  end
+
 
 
 

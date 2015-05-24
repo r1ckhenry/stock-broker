@@ -1,12 +1,12 @@
-class Broker
+class Client
 
   def initialize(options = {})
     @name = options[:name]
-    @clients = options[:clients] || []
+    @balance = options[:balance]
   end
 
 
-  # Getters and setters
+  #Getters and setters
   def name
     @name
   end
@@ -15,12 +15,12 @@ class Broker
     @name=name
   end
 
-  def clients
-    @clients
+  def balance
+    @balance
   end
 
-  def clients=(clients)
-    @clients
+  def balance=(balance)
+    @balance=balance
   end
 
 end
