@@ -14,6 +14,8 @@ describe Client do
     expect(client.balance).to eq 2000
   end
 
-  it 'should have nothing in portfolio'
+  it 'should have nothing in portfolio' do
+    expect(client.portfolios.count).to eq 0
+  end
 
 end

@@ -3,6 +3,7 @@ class Client
   def initialize(options = {})
     @name = options[:name]
     @balance = options[:balance]
+    @portfolios = options[:portfolios] || []
   end
 
 
@@ -21,6 +22,14 @@ class Client
 
   def balance=(balance)
     @balance=balance
+  end
+
+  def portfolios
+    @portfolios
+  end
+
+  def portfolios=(portfolios)
+    @portfolios=portfolios
   end
 
 end
