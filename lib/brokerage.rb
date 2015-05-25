@@ -5,7 +5,6 @@ class Broker
     @clients = options[:clients] || []
   end
 
-
   # Getters and setters
   def name
     @name

@@ -13,7 +13,4 @@ describe Broker do
     expect(broker.clients.count).to eq 0
   end
 
-
-
-
 end

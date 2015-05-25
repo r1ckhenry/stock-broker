@@ -5,6 +5,7 @@ class Stock
   def initialize(options = {})
     @volume = options[:volume] || DEFAULT_VOLUME
     @name = options[:name]
+    @price = options[:price]
   end
 
   # Getters and setters
@@ -23,6 +24,14 @@ class Stock
 
   def name=(name)
     @name=name
+  end
+
+  def price
+    @price
+  end
+
+  def price=(price)
+    @price=price
   end
 
 end

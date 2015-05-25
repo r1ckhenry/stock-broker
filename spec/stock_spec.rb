@@ -13,6 +13,10 @@ describe Stock do
     expect(stock.name).to eq 'Stock Name'
   end
 
+  it 'should have a price' do
+    stock.price = 2.43
+    expect(stock.price).to eq 2.43
+  end
 
   
 end
